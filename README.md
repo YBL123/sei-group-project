@@ -10,9 +10,9 @@ The time frame for this group project was a week. Our group was made up of 4 mem
 
 ## Team
 
-* Aino Kytölä
+* [Aino Kytölä](github.com/ainokyto)
 * [George Jones](https://github.com/Jompra) 
-* Jakub Horun
+* [Jakub Horun](github.com/ykbhrn)
 
 ## Deployment
 
