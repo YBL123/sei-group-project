@@ -13,4 +13,22 @@ Our group was made up of 4 members, my group members were:
 * [George Jones](https://github.com/Jompra) 
 * Jakub Horun
 
+## Deployment
 
+## Built With
+
+## Getting Started
+
+## Brief
+
+## Website Architecture
+
+## Wins
+
+## Challenges
+
+## Bugs
+
+## Future Improvements
+
+## Credits
