@@ -16,6 +16,8 @@ The time frame for this group project was a week. Our group was made up of 4 mem
 
 ## Deployment
 
+The website is deployed on Heroku and can be found here (link here)
+
 ## Built With
 
 ## Getting Started
