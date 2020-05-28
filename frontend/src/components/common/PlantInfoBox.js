@@ -47,7 +47,7 @@ class PlantInfoBox extends React.Component {
 
 
   render(){
-    console.log('box props', this.state.scientificName)
+    // console.log('box props', this.state.scientificName)
     
     return(
       <h1>{this.state.plantData}</h1>

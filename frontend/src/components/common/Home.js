@@ -13,14 +13,14 @@ state = {
 
 componentDidMount = async () => {
   if (await isAuthenticated()){
-    console.log('authenticated')
+    // console.log('authenticated')
     this.setState({ authenticated: true })
   }
 }
 
 renderRedirect = () => {
   if(this.state.authenticated){
-    console.log('redirecting')
+    // console.log('redirecting')
     return <Redirect to="/plants" />
   }
 }
@@ -40,7 +40,7 @@ showFunction = (childData) => {
             </div>
           </div>
           <div className="column">
-            <img src="https://res.cloudinary.com/jompra/image/upload/v1589738053/plntify_f9zfgd.svg" alt="Plntify Logo"></img>
+            <img src="https://res.cloudinary.com/djnrxk3jw/image/upload/v1590687760/plntify_gmgnri.svg" alt="Plntify Logo"></img>
             {this.state.showRegister ? <Register switchForm={this.showFunction}/> : <Login switchForm={this.showFunction}/>}          
           </div>
         </div>

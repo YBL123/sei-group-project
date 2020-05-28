@@ -30,7 +30,7 @@ class EditPlant extends React.Component {
       ...this.state.formData, location: [{lat: lat, lon: lon}]
     }
     this.setState({ formData })
-    console.log('parent', this.state.formData.location)
+    // console.log('parent', this.state.formData.location)
   }
 
 
@@ -55,7 +55,7 @@ class EditPlant extends React.Component {
     const sciName = { ...this.state.formData, scientificName: event.value } //* we create a new copy of the form data object in state, updating whichever field the user just typed into by name and value
     const errors = { ...this.state.errors, [event.name]: '' } // * any error that may have been present for that field will be reset
     this.setState({ formData: sciName, errors }) // * Set those new values into state, to see the update in the DOM
-    console.log(this.state.formData.scientificName)
+    // console.log(this.state.formData.scientificName)
   }
 
   handleSubmit = async event => { // * a function to handle the submission of our form
@@ -63,7 +63,7 @@ class EditPlant extends React.Component {
 
     const plantId = this.props.match.params.id // * getting our plant id to edit from the URL
     try {
-      console.log('formdata', this.state.formData)
+      // console.log('formdata', this.state.formData)
       await editPlant(plantId, this.state.formData) // * using our editPlant function, passing it the plant id to edit, and the new data for it. 
       this.props.history.push(`/plants/${plantId}`) // * once we awaited the edit function, we redirect the user to the ShowPlant page, so they can see the edits they've made.
     } catch (err) {
@@ -81,7 +81,7 @@ class EditPlant extends React.Component {
   }
 
   render() {
-    console.log("render", this.state.formData)
+    // console.log("render", this.state.formData)
     return (
       <section className="section">
         <div className="container">

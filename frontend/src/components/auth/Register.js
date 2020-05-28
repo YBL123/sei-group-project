@@ -87,7 +87,7 @@ class Register extends React.Component {
 
   render() {
     const { formData, errors } = this.state
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <section className="section">
         {this.renderRedirect()}

@@ -22,7 +22,7 @@ class Like extends React.Component {
         if(like.userId.toString() === userId.sub.toString()) {
           this.setState({ liked: true })
           this.setState({ style: 'fas fa-heart fa-lg' })
-          console.log('like is true')
+          // console.log('like is true')
         }
       })
     } catch(err) {

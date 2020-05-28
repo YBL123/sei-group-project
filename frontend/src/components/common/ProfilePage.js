@@ -96,35 +96,35 @@ class ProfilePage extends React.Component {
       return <div className="offer-section">
         <div className="title is-4">You have response from: <Link to={`/profile/${offer.userId}`}> {offer.userName}</Link> </div>
         <div className="offer-container">
-        <div className="offer">
-          On plant: <br/><Link to={`/plants/${offer.plantId}`}> {offer.plantName}<br />
-          <img src={offer.plantImageUrl} alt={offer.plantName} className='image  image-offer is-64x64'/>
-        </Link>
-        </div>
-        <span className="arrow">	&hArr;</span>
-        <div className="offer">
-          You are offering:  <br/> <Link to={`/plants/${offer.offeredPlantId}`}>{offer.offeredPlantName}<br />
-          <img src={offer.offeredImageUrl} alt={offer.offeredPlantName} className='image image-offer is-64x64' />
-        </Link>
-        </div>
+          <div className="offer">
+            On plant: <br /><Link to={`/plants/${offer.plantId}`}> {offer.plantName}<br />
+              <img src={offer.plantImageUrl} alt={offer.plantName} className='image  image-offer is-64x64' />
+            </Link>
+          </div>
+          <span className="arrow">	&hArr;</span>
+          <div className="offer">
+            You are offering:  <br /> <Link to={`/plants/${offer.offeredPlantId}`}>{offer.offeredPlantName}<br />
+              <img src={offer.offeredImageUrl} alt={offer.offeredPlantName} className='image image-offer is-64x64' />
+            </Link>
+          </div>
         </div>
         <div className="field">
           <div className={this.decisionClass(offer.response)}>{offer.response}</div>
         </div>
         <div className="field">
-                  </div>
-                
+        </div>
+
                   Message from user: < br />
-                    <div className="message">{offer.text}</div>
-                    {accepted &&
-                  <button type="submit" className="button is-dark"
-                  onClick={() => {
-                    this.finishTrade(this.state.user._id, offer._id, offer.offeredPlantId, offer.plantId)
-                  }}
-                  >
-                    Did you finish your trade with {offer.userName}?
+        <div className="message">{offer.text}</div>
+        {accepted &&
+          <button type="submit" className="button is-dark"
+            onClick={() => {
+              this.finishTrade(this.state.user._id, offer._id, offer.offeredPlantId, offer.plantId)
+            }}
+          >
+            Did you finish your trade with {offer.userName}?
                   </button>
-                  }
+        }
       </div>
     })
 
@@ -153,24 +153,24 @@ class ProfilePage extends React.Component {
           {/* //* Offers on your plants Code  */}
           <div className='title is-4'>
             You have offer from: <Link to={`/profile/${offer.user._id}`}> {offer.user.name}</Link>
-            </div>
-            <div className="offer-container">
-              <div className="offer">
-            On plant: <Link to={`/plants/${plant._id}`}> {plant.name}
-              <img src={plant.imageUrl} alt={plant.name} className="image is-64x64" />
-            </Link>
+          </div>
+          <div className="offer-container">
+            <div className="offer">
+              On plant: <Link to={`/plants/${plant._id}`}> {plant.name}
+                <img src={plant.imageUrl} alt={plant.name} className="image is-64x64" />
+              </Link>
             </div>
             <span className="arrow">	&hArr;</span>
             <div className="offer">
-            Offered Plant: <Link to={`/plants/${offer.plantId}`}>{offer.name}
-              <img src={offer.imageUrl} alt={offer.name} className="image is-64x64"/>
-            </Link>
+              Offered Plant: <Link to={`/plants/${offer.plantId}`}>{offer.name}
+                <img src={offer.imageUrl} alt={offer.name} className="image is-64x64" />
+              </Link>
             </div>
-            </div>
-            <p>Message from {offer.user.name}: </p>
-            <div className="message">{offer.text} </div>
+          </div>
+          <p>Message from {offer.user.name}: </p>
+          <div className="message">{offer.text} </div>
 
-            {/* <img src={offer.imageUrl} /> */}
+          {/* <img src={offer.imageUrl} /> */}
 
           <button
             className="button is-dark"
@@ -217,10 +217,10 @@ class ProfilePage extends React.Component {
     const date = new Date()
     const hour = date.getHours()
     let message = ''
-    console.log('hour: ', hour)
-    if (hour < 12){
+    // console.log('hour: ', hour)
+    if (hour < 12) {
       message = 'Good Morning'
-    } else if (hour >= 12 && hour < 17){
+    } else if (hour >= 12 && hour < 17) {
       message = 'Good Afternoon'
     } else {
       message = 'Good Evening'
@@ -235,23 +235,23 @@ class ProfilePage extends React.Component {
     return (
       <section className="section m-scene">
         <h1 className="title is-2 has-text-centered">{`${this.state.timeMessage} ${this.state.user.name}`}</h1>
+        <hr />
+        <div className='offers-container'>
+
+          {/* Received offers jsx code in that function */}
+          <div className='offers'>
+            <h1 className="title is-4 is-sucess">Your Offers: </h1>
             <hr />
-         <div className='offers-container'>
+            {this.showRecievedOffers()}
+          </div>
 
-{/* Received offers jsx code in that function */}
-<div className='offers'>
-  <h1 className="title is-4 is-sucess">Your Offers: </h1>
-  <hr />
-  {this.showRecievedOffers()}
-</div>
-
-{/* Responses for your offers */}
-<div className='responses'>
-  <h1 className="title is-4 is-sucess">Your responses: </h1>
-  <hr />
-  {this.handleResponse()}
-</div>
-</div>
+          {/* Responses for your offers */}
+          <div className='responses'>
+            <h1 className="title is-4 is-sucess">Your responses: </h1>
+            <hr />
+            {this.handleResponse()}
+          </div>
+        </div>
         <div className="container">
           <div>
             <h2 className="title is-4 has-text-centered">You have {this.state.user.createdPlants.length} plants in your portfolio</h2>
@@ -264,7 +264,7 @@ class ProfilePage extends React.Component {
           </div>
         </div>
         <div>
-         
+
         </div>
 
       </section>

@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css' //? stylesheet
 import { getAllPlants } from '../../lib/api'
 import Select from 'react-select'
 
-const token = 'pk.eyJ1IjoiYWlub2t5dG8iLCJhIjoiY2thYmdqODRmMTY0aDJ5cDRvOWk1cTd6MyJ9.QIlx0yP5sKCZRAVrfrq3OA'
+const token = process.env.REACT_APP_MAPBOX_TOKEN
 const mapStyle = 'mapbox://styles/mapbox/light-v10'
 
 //?AK Styles for navigation controllers
@@ -58,7 +58,7 @@ class Maps extends React.Component {
       })
       this.setState({ plants })
       this.setState({ hotPlants })
-      console.log(this.props)
+      // console.log(this.props)
     } catch (err) {
       console.log(err)
       this.props.history.push('/notfound')
@@ -78,7 +78,7 @@ class Maps extends React.Component {
       longitude: parseFloat(selectedPlant[0].lon)
     }
     this.setState({ locationData, plantSelect: true, selectedPlant: null, plantShow: null, plantProps: null }, this.setNewViewport)
-    console.log(this.state.plantSelect)
+    // console.log(this.state.plantSelect)
   }
 
   //?AK Function to take selected plant's locationData from state 

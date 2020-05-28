@@ -4,9 +4,10 @@ import { getTrefleData } from '../../lib/api'
 import axios from 'axios'
 
 
-const uploadUrl = 'https://api.cloudinary.com/v1_1/jompra/image/upload'
-const uploadPreset = 'ml_default'
-const moderatorKey = 'dc0c6202b07ba22e3425ed4299d7a233'
+const uploadUrl = process.env.REACT_APP_CLOUDINARY_URL
+const uploadPreset = process.env.REACT_APP_CLOUDINARY_BUCKET
+const moderatorKey = process.env.REACT_APP_MODERATION_KEY
+const mapBoxKey = process.env.REACT_APP_MAPBOX_TOKEN
 
 
 class FormPlant extends React.Component {
@@ -48,7 +49,7 @@ class FormPlant extends React.Component {
       })
       return
     }
-    axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.search}.json?access_token=pk.eyJ1IjoieWFyZGVuNTAiLCJhIjoiY2thNTVnOXc3MDZ0NTNvbnVvN3Nhdm1obiJ9.QbdSEysOTf3gzai-WwOSow`)
+    axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.search}.json?access_token=${mapBoxKey}`)
       .then(response => {
         this.setState({
           results: response.data.features,

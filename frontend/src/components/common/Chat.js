@@ -64,8 +64,8 @@ class Chat extends React.Component {
   render() {
     const { chats, message } = this.state
     if (!this.state.user) return null
-    console.log('Chats: ', this.state.chats)
-    console.log(this.state.chatUser)
+    // console.log('Chats: ', this.state.chats)
+    // console.log(this.state.chatUser)
     return (
       <>
         <h1 className="title is-3 chat-title">Your Inbox:</h1>

@@ -2,12 +2,12 @@ const mongoose = require('mongoose')
 const dbURI = 'mongodb://localhost/plants-db3'
 const Plant = require('../models/plant')
 const User = require('../models/user')
+require('dotenv').config()
 // const faker = require('faker')
 // const plantsData = require('./data/plants')
 const usersData = require('./data/users')
 const axios = require('axios')
-const trefleToken = 'S2RkU2JTY2tqbjJPVUV6MFRsYmUvdz09'
-const pexelsHeader = { Authorization: '563492ad6f917000010000014e452efa91af4e33bf581f73e3eb261b' }
+const { trefleToken, pexelsHeader } = require('../config/environment')
 const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 
 const commonNames = []

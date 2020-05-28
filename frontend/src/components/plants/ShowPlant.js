@@ -37,7 +37,7 @@ class ShowPlant extends React.Component {
   }
 
   fillOffersBox = () => {
-    console.log('fill offers ran')
+    // console.log('fill offers ran')
     const options = []
     this.state.user.createdPlants.forEach(userPlant => {
 
@@ -45,7 +45,7 @@ class ShowPlant extends React.Component {
 
     })
     this.setState({ selectOptions: options })
-    console.log(this.state.selectOptions)
+    // console.log(this.state.selectOptions)
   }
 
   // {this.state.user.createdPlants.map(userPlant => {
@@ -80,11 +80,11 @@ class ShowPlant extends React.Component {
   }
 
   handleSelectChange = event => {
-    console.log('value: ', event.value)
+    // console.log('value: ', event.value)
     const offerData = { ...this.state.offerData, offer: event.value }
     this.setState({ offerData })
     this.handleOffer(event.value)
-    console.log(this.state.offerData)
+    // console.log(this.state.offerData)
   }
 
   handleOffer = value => {
@@ -94,7 +94,7 @@ class ShowPlant extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault()
-    console.log('at submit: ', this.state)
+    // console.log('at submit: ', this.state)
     try {
       const plantId = this.props.match.params.id
       const res = await makeOffer(plantId, this.state.userPlantId, this.state.offerData)
@@ -110,8 +110,8 @@ class ShowPlant extends React.Component {
     if (!this.state.plant) return null // * if there is no plant object, return null
     const { plant, isOffer } = this.state // * deconstruct the plant from state
 
-    console.log(this.state.user)
-    console.log(plant.imageUrl)
+    // console.log(this.state.user)
+    // console.log(plant.imageUrl)
 
     return (
       <section className="section m-scene">

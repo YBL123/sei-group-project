@@ -61,7 +61,7 @@ class Comments extends React.Component {
   }
 
   showMoreCommentsHandleClick = async () => {
-    console.log('showing more')
+    // console.log('showing more')
     // event.preventDefault()
     //* now the rows will be equal to the comments array lenght and all the comments will be shown
     const newRows = this.state.plant.comments.length
@@ -71,7 +71,7 @@ class Comments extends React.Component {
   }
 
   ShowLessCommentsHandleClick = async () => {
-    console.log('showing less')
+    // console.log('showing less')
     // event.preventDefault()
 
     const lessRows = '3'
@@ -82,7 +82,7 @@ class Comments extends React.Component {
   toggleCommentsHandleClick = async event => {
     event.preventDefault()
     const show = this.state.commentsStatus
-    console.log(show) 
+    // console.log(show) 
     
     if (show) {
       this.setState({ commentsStatus: false , buttonText: 'Show less comments' })
