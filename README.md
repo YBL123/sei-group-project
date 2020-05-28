@@ -6,8 +6,9 @@
 ## Overview
 
 A plant trading social app. 
-The time frame for this group project was a week.
-Our group was made up of 4 members, my group members were: 
+The time frame for this group project was a week. Our group was made up of 4 members. 
+
+## Team
 
 * Aino Kytölä
 * [George Jones](https://github.com/Jompra) 
