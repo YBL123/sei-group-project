@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const dbURI = 'mongodb://localhost/plants-db3'
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/plants-db3'
 const Plant = require('../models/plant')
 const User = require('../models/user')
 require('dotenv').config()
