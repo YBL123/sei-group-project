@@ -85,7 +85,8 @@ When the user adds a new plant to their portfolio they are able to add it's scie
 
 * Fine-tune trade and chat
 * Fine-tune styling
-* Exapand on social aspect. Followers, favourites.
-* Index page dropdown to filter plants by newst, favourites, following, location.
+* Exapand on social aspect. Followers, favourites
+* Add likes to comments
+* Index page dropdown to filter plants by newst, favourites, following, location
 
 ## Credits
