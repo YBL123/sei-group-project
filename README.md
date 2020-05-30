@@ -38,6 +38,19 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 
 ## Getting Started
 
+To download the source code click the clone button. Run the following commands in the terminal:
+
+* To install all packages listed in the package.json:
+```terminal
+npm i
+```
+
+* To run the app in your localhost:
+** in both front and back:
+```terminal
+npm run start
+```
+
 ## Brief
 
 * **Build a full-stack application** by making your own backend and your own front-end
