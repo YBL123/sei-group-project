@@ -70,8 +70,9 @@ npm run start
 
 Main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
 
+### Home 
 
-### Register/Login
+### Register & Login
 
 ![plntfy home](readme-home.png)
 
