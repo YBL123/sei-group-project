@@ -50,6 +50,7 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 ## Website Architecture
 
 * Our [wireframes](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
+![plntfy wireframes](readme-plntify-wireframes.png)
 
 
 ## Wins
