@@ -6,7 +6,8 @@
 ## Overview
 
 A plant trading social app. 
-The time frame for this group project was a week. Our group was made up of 4 members. 
+The time frame for this group project was a week. Our group was made up of 4 members.
+Each user has their own portfolio of plants that is diplayed on their profile page. The users are able to use the interactive map to see other plant's locations as well as add their own. There is a trade feature where users are able to offer a plant from their portfolio in exchange for another user's plant. The user who receives this offer is able to accept or decline. Users are able to like and comment on other user's plants, as well as being able to communicate through a private chat.
 
 ## Team
 
@@ -54,6 +55,7 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
 ![plntfy wireframe](readme-plntify-wireframe.png)
 
+When the user adds a new plant to their portfolio they are able to add it's scientific name, upload an image and use the auto-complete location search in put to enter the plant's location.
 
 ## Wins
 
