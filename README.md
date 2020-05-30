@@ -74,12 +74,12 @@ Main components are home, index, profile, plant show. Interact through map, trad
 
 dasdsa
 
-#### Register/Login
+### Register/Login
 
 ![plntfy home](readme-home.png)
 
 
-#### Index
+### Index
 Becomes home page after logging in.
 
 ![plntfy index](readme-index.png)
