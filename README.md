@@ -16,7 +16,7 @@ The time frame for this group project was a week. Our group was made up of 4 mem
 
 ## Deployment
 
-The website is deployed on Heroku and can be found here (link here)
+The website is deployed on Heroku and can be found [here](http://plntify-app.herokuapp.com/)
 
 ## Built With
 
