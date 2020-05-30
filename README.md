@@ -20,6 +20,21 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 
 ## Built With
 
+* React
+* Express
+* Node.js
+* MongoDB
+* Sass
+* Axios 
+* Bulma
+* Git
+* GitHub
+* Mapbox GL
+* Trefle API
+* Cloudinary
+* Pexels API
+* Moderation API
+
 ## Getting Started
 
 ## Brief
