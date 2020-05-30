@@ -72,10 +72,20 @@ When the user adds a new plant to their portfolio they are able to add it's scie
 
 ## Wins
 
+* how well we worked together as a team etc....
+
 ## Challenges
 
+* full-stack comments and likes....
+
 ## Bugs
+?
 
 ## Future Improvements
+
+* Fine-tune trade and chat
+* Fine-tune styling
+* Exapand on social aspect. Followers, favourites.
+* Index page dropdown to filter plants by newst, favourites, following, location.
 
 ## Credits
