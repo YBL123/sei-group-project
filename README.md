@@ -46,7 +46,7 @@ npm i
 ```
 
 * To run the app in your localhost:
-* in both front and back:
+* In both front and back:
 ```terminal
 npm run start
 ```
