@@ -68,11 +68,41 @@ npm run start
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
 ![plntfy wireframe](readme-plntify-wireframe.png)
 
+Main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
+
+### Home 
+
+#### Register/Login
+
+![plntfy home](readme-home.png)
+
+
+### Index
+Becomes home page after logging in.
+
+![plntfy index](readme-index.png)
+
+
+### Create Plant
+
+![plntfy create](readme-create.png)
+
+### Plant Page
+
+![plntfy page](readme-show.png)
+
+### Profile Page
+
+![plntfy profile](readme-profile.png)
+
+
 When the user adds a new plant to their portfolio they are able to add it's scientific name, upload an image and use the auto-complete location search in put to enter the plant's location.
 
 ## Wins
 
 * how well we worked together as a team etc....
+* Communication was key
+* Also used trello but mainly just discussed during standup every morning and updating each other whenever we were finished with a task or stuck, on zoom and on slack all day.
 
 ## Challenges
 
