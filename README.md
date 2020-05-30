@@ -72,7 +72,7 @@ Main components are home, index, profile, plant show. Interact through map, trad
 
 ### Home 
 
-#### Register/Login
+### Register/Login
 
 ![plntfy home](readme-home.png)
 
