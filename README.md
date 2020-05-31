@@ -68,7 +68,9 @@ npm run start
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
 ![plntfy wireframe](readme-plntify-wireframe.png)
 
-The main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
+The main components are the home page, index page, profile page, plant page. Users are also able to interact with the map through the home/index page and through the map thumbnail on each plant page. Trade and chat are accessed through the user's profile page.
+
+I will give an overview of the app's architecture and delve into more detail on some of the features I built.
 
 ## Home 
 
@@ -120,7 +122,7 @@ When the user adds a new plant to their portfolio they are able to add it's scie
 * Fine-tune styling
 * Exapand on social aspect. Followers, favourites
 * Add likes to comments
-* Index page dropdown to filter plants by newst, favourites, following, location
+* Index page dropdown to also filter plants by newest, favourites, following, location - through search input.
 * An about page that is visible before registering/logging in and after.
 
 ## Credits
