@@ -207,7 +207,7 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Map Thumbnail
 
-I built the map thumbnail as an independent component. That way it could be easily used anywhere on the app. This component passes the props to the lat and long. The lat and long is filled in when a plant is added or edited.
+I built the map thumbnail as an independent component. That way it could be easily used anywhere on the app. This component passes the props to the lat and long. The value for the lat and long is assigned when a plant is added or edited.
 
 ```javascript
 import React from 'react'
