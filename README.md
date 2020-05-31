@@ -1,7 +1,7 @@
 <img align="left" width="50" height="50" src="GA.png" alt="GA logo">
 
 # Project 3: plntify
-![plntfy logo](readme-plntify.svg)
+![plntify logo](readme-plntify.svg)
 
 ## Overview
 
@@ -76,7 +76,7 @@ npm run start
 ### Wireframe
 
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
-![plntfy wireframe](readme-plntify-wireframe.png)
+![plntify wireframe](readme-plntify-wireframe.png)
 
 The main components are the home page, index page, profile page, plant page. Users are also able to interact with the map through the home/index page and through the map thumbnail on each plant page. Trade and chat are accessed through the user's profile page. The user can also check their chat inbox through the navbar.
 
@@ -89,23 +89,23 @@ I will give an overview of the app's architecture and delve into more detail on 
 When first loading the page, if the user has not registered and logged in, they are met with this page. 
 We chose to do this as users can only really interact with the app once they have created an account and a portfolio. The navbar items are completely hidden until the user registers and logs in.
 
-![plntfy home](readme-home.png)
+![plntify home](readme-home.png)
 
 ### Index
 
 Once the user has registerd and logged in, the index page also doubles as the home page. The user gains acess to all of the app's features. All items in the navbar become visible.
 
-![plntfy index](readme-index.png)
+![plntify index](readme-index.png)
 
 ### Profile Page
 
 The user is greeted with a welcome message that changes according to the time of day. Here the user is able to view their portfolio, offers and responses.
 
-![plntfy profile](readme-profile.png)
+![plntify profile](readme-profile.png)
 
 ### Create Plant
 
-![plntfy create](readme-create.png)
+![plntify create](readme-create.png)
 
 When the user adds a new plant to their portfolio they are able to add it's 'Nickname', 'Common-Name' (which prompts the 'Scientific Name'), 'Height in Centimeters', 'Description',  'Upload Image'.  Finally they are able to use the auto-complete location search input to enter the plant's address to fill in the 'Location'.
 
@@ -234,7 +234,7 @@ The FormPlant is called on in the render of NewPlant & EditPlant. The above prop
 
 The address is condensed into lattitude and longitude. This was done to translate to the map and place the marker on the map thumbnail.
 
-![plntfy location autocomplete](readme-location.png)
+![plntify location autocomplete](readme-location.png)
 
 ```javascript
        <div className="field">
@@ -260,7 +260,7 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Plant Page
 
-![plntfy plant page](readme-show.png)
+![plntify plant page](readme-show.png)
 
 ### Map Thumbnail
 
@@ -459,7 +459,7 @@ Likes component being called on in the ShowPlant component:
               />
 ```
 
-![plntfy likes](readme-likes.png)
+![plntify likes](readme-likes.png)
 
 ### Comments
 
@@ -637,16 +637,16 @@ __Toggle__
   }
 ```
 
-![plntfy comments](readme-comments.png)
+![plntify comments](readme-comments.png)
 
 
 ## Trade
 
-![plntfy trade](readme_make_offer.png)
+![plntify trade](readme_make_offer.png)
 
 ## Chat
 
-![plntfy chat](readme_chat.png)
+![plntify chat](readme-chat.png)
 
 ## Wins
 
