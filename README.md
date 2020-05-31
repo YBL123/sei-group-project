@@ -38,7 +38,7 @@ The website is deployed on Heroku and can be found [here](http://plntify-app.her
 * Bulma
 * Git
 * GitHub
-* Mapbox GL
+* Mapbox API
 * Trefle API
 * Cloudinary
 * Pexels API
