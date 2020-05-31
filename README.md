@@ -184,7 +184,9 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Plant Page
 
-### Plant Page - Map Thumbnail
+![plntfy plant page](readme-show.png)
+
+### Map Thumbnail
 
 Independent component built. The this component passes the props to the ShowPlant component.
 
@@ -238,8 +240,6 @@ const PlantMapThumbnail = (props) => {
 
 export default PlantMapThumbnail
 ```
-
-![plntfy plant page](readme-show.png)
 
 ### Likes 
 
