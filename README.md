@@ -86,7 +86,7 @@ I will give an overview of the app's architecture and delve into more detail on 
 
 ### Register & Login
 
-When first loading the page, if the user has not registered and logged in, they are met with this page. 
+When first loading, if the user has not registered and logged in, they are met with this page. 
 We chose to do this as users can only really interact with the app once they have created an account and a portfolio. The navbar items are completely hidden until the user registers and logs in.
 
 ![plntify home](readme-home.png)
