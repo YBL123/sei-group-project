@@ -607,7 +607,7 @@ showMoreCommentsHandleClick = async () => {
 
   }
 ```
-__show less comments__
+__Show less comments__
 
 ```javascript
   ShowLessCommentsHandleClick = async () => {
@@ -619,7 +619,7 @@ __show less comments__
     this.getData()
   }
 ```
-__toggle__
+__Toggle__
 
 ```javascript
   toggleCommentsHandleClick = async event => {
