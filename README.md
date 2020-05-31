@@ -334,7 +334,7 @@ The PlantMapThumbnail is called on in the ShowPlant component. The props are pas
 
 Users are able to like and unlike plants from the index page and on the plant page.
 
-* back 
+#### Back 
 
 /// schema ///
 
@@ -399,7 +399,7 @@ module.exports = {
 ```
 
 
-* front 
+#### Front  
 
 * insert code snippet
 
@@ -407,9 +407,9 @@ module.exports = {
 
 ### Comments
 
-*  able to do so on plant page
+Users are able to comment on plants on each plant page.
 
-* back 
+### Back 
 
 /// comment schema ///
 
@@ -497,7 +497,7 @@ async function plantsCommentDelete(req, res) {
 }
 ```
 
-* front 
+#### Front 
 
 * insert code snippet
 
