@@ -7,7 +7,15 @@
 
 A plant trading social app. 
 The time frame for this group project was a week. Our group was made up of 4 members.
-Each user has their own portfolio of plants that is diplayed on their profile page. The users are able to use the interactive map to see other plant's locations. Users are also able to add their own plant's location when they add a plant or edit their plant. There is a trade feature where users are able to offer a plant from their portfolio in exchange for another user's plant. The user who receives this offer is able to accept or decline. The user who made the offer is able to see their offer's status via their profile page. Users are able to like and comment on other user's plants, as well as being able to communicate through a private chat.
+
+Each user has their own portfolio of plants that is diplayed on their profile page.
+
+The users are able to use the interactive map to see other plant's locations. Users are also able to add their own plant's location when they add a plant or edit their plant. 
+A map thumbnail with a marker for the plant's location is also displayed on each plant page.
+
+There is a trade feature where users are able to offer a plant from their portfolio in exchange for another user's plant. The user who receives this offer is able to accept or decline. The user who made the offer is able to see their offer's status via their profile page.
+
+Users are able to like and comment on other user's plants, as well as being able to communicate through a private chat.
 
 ## Team
 
