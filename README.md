@@ -555,19 +555,81 @@ async function plantsCommentDelete(req, res) {
 
 #### Front: 
 
-* insert code snippet
+__Add comment__
 
-* add comment
+```javascript
+//* COMMENTS
+  commentHandleChange = event => {
+    const text = event.target.value //* saving what the user types into the comment box
+    this.setState({ text }) //* setting state with their comment
+  }
 
-* insert code snippet
+  commentHandleSubmit = async event => {
+    event.preventDefault()
+    const plantId = this.props.plantId
+    try {
+      await addComment({ text: this.state.text }, plantId) //* the add comment function requires a text field so you can pass it through like so - also it needs to match the order that you're using the arguments in your api.js file
+      this.setState({ text: '' }) //* setting the comment box back to empty
+    } catch (err) {
+      console.log(err.response.data)
+    }
+    this.getData() //* calling this getData function again to reload the page with the new database info and display your new comment straight away!
+  }
+```
 
-* delete comment
+__Delete comment__
 
-* insert code snippet
+```javascript
+commentHandleDelete = async event => {
+    event.preventDefault()
 
-* show more, show less
+    try {
+      const commentId = event.target.getAttribute('comment-id')
+      const plantId = this.state.plant._id
+      await deleteComment(plantId, commentId)
+    } catch (err) {
+      console.log(err)
+    }
+    this.getData()
+  }
+```
 
-* insert code snippet
+__Show more/less comments __
+
+```javascript
+showMoreCommentsHandleClick = async () => {
+    // console.log('showing more')
+    // event.preventDefault()
+    //* now the rows will be equal to the comments array lenght and all the comments will be shown
+    const newRows = this.state.plant.comments.length
+    this.setState({ rows: newRows })
+    this.getData()
+
+  }
+
+  ShowLessCommentsHandleClick = async () => {
+    // console.log('showing less')
+    // event.preventDefault()
+
+    const lessRows = '3'
+    this.setState({ rows: lessRows })
+    this.getData()
+  }
+
+  toggleCommentsHandleClick = async event => {
+    event.preventDefault()
+    const show = this.state.commentsStatus
+    // console.log(show) 
+    
+    if (show) {
+      this.setState({ commentsStatus: false , buttonText: 'Show less comments' })
+      this.showMoreCommentsHandleClick()
+    } else {
+      this.setState({ commentsStatus: true , buttonText: 'Show more comments' })
+      this.ShowLessCommentsHandleClick()
+    }
+  }
+```
 
 ![plntfy comments](readme-comments.png)
 
