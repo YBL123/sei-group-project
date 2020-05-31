@@ -110,14 +110,33 @@ When the user adds a new plant to their portfolio they are able to add it's 'Nic
 This was done using the MapBox GL API.
 
 ```javascript
- handleSearchChange(e) {
+ class FormPlant extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      options: [],
+      search: '',
+      results: [],
+      isLoading: false,
+      lon: '',
+      lat: '',
+      test: '',
+      errors: {},
+    }
+    this.handleSearchChange = this.handleSearchChange.bind(this)
+    this.handleItemClicked = this.handleItemClicked.bind(this)
+  }
+
+  handleSearchChange(e) {
     this.setState({
       search: e.target.value,
       isLoading: true
     })
 
+    // Stop the previous setTimeout if there is one in progress
     clearTimeout(this.timeoutId)
 
+    // Launch a new request in 1000ms
     this.timeoutId = setTimeout(() => {
       this.performSearch()
     }, 1000)
@@ -150,7 +169,7 @@ This was done using the MapBox GL API.
       search: search,
       results: []
     })
-    
+    // console.log(this.state)
     this.props.onSelect(lat, lon)
 
   }
