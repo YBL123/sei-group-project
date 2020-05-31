@@ -518,6 +518,12 @@ async function plantsCommentDelete(req, res) {
 ![plntfy comments](readme-comments.png)
 
 
+## Trade
+
+
+## Chat
+
+
 ## Wins
 
 * how well we worked together as a team etc....
