@@ -7,7 +7,7 @@
 
 A plant trading social app. 
 The time frame for this group project was a week. Our group was made up of 4 members.
-Each user has their own portfolio of plants that is diplayed on their profile page. The users are able to use the interactive map to see other plant's locations as well as add their own. There is a trade feature where users are able to offer a plant from their portfolio in exchange for another user's plant. The user who receives this offer is able to accept or decline. Users are able to like and comment on other user's plants, as well as being able to communicate through a private chat.
+Each user has their own portfolio of plants that is diplayed on their profile page. The users are able to use the interactive map to see other plant's locations. Users are also able to add their own plant's location when they add a plant or edit their plant. There is a trade feature where users are able to offer a plant from their portfolio in exchange for another user's plant. The user who receives this offer is able to accept or decline. The user who made the offer is able to see their offer's status via their profile page. Users are able to like and comment on other user's plants, as well as being able to communicate through a private chat.
 
 ## Team
 
@@ -68,7 +68,7 @@ npm run start
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
 ![plntfy wireframe](readme-plntify-wireframe.png)
 
-Main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
+The main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
 
 ### Home 
 
@@ -119,5 +119,6 @@ When the user adds a new plant to their portfolio they are able to add it's scie
 * Exapand on social aspect. Followers, favourites
 * Add likes to comments
 * Index page dropdown to filter plants by newst, favourites, following, location
+* An about page that is visible before registering/logging in and after.
 
 ## Credits
