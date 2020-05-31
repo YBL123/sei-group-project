@@ -27,6 +27,8 @@ Users are able to like and comment on other user's plants, as well as being able
 
 The website is deployed on Heroku and can be found [here](http://plntify-app.herokuapp.com/)
 
+(After one hour of inactivity Heroku puts the dyno to sleep. The first request may be be wakening it up again and so the first request the router sends will have some delay).
+
 ## Built With
 
 * React
@@ -207,7 +209,7 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Map Thumbnail
 
-I built the map thumbnail as an independent component. That way it could be easily used anywhere on the app. This component passes the props to the lat and long. The value for the lat and long is assigned when a plant is added or edited.
+I built the map thumbnail as an independent component. That way it could be easily be imported and used anywhere on the app. This component passes the props to the lat and long. The value for the lat and long is assigned when a plant is added or edited.
 
 ```javascript
 import React from 'react'
@@ -275,7 +277,7 @@ This is how the map thumbnail is inserted into the plant page.
 
 ### Likes 
 
-* able to do so from index or in plant page
+Users are able to like and unlike plants from the index page and on the plant page.
 
 * stays even when reloading page
 
