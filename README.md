@@ -109,7 +109,52 @@ When the user adds a new plant to their portfolio they are able to add it's 'Nic
 
 This was done using the MapBox GL API.
 
-* insert snippet
+```javascript
+ handleSearchChange(e) {
+    this.setState({
+      search: e.target.value,
+      isLoading: true
+    })
+
+    clearTimeout(this.timeoutId)
+
+    this.timeoutId = setTimeout(() => {
+      this.performSearch()
+    }, 1000)
+  }
+  performSearch() {
+    if (this.state.search === "") {
+      this.setState({
+        results: [],
+        isLoading: false
+      })
+      return
+    }
+    axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.search}.json?access_token=${mapBoxKey}`)
+      .then(response => {
+        this.setState({
+          results: response.data.features,
+
+          isLoading: false
+        })
+      })
+  }
+  handleItemClicked = async (place) => {
+
+    const search = await place.place_name
+    const lon = await place.geometry.coordinates[0]
+    const lat = await place.geometry.coordinates[1]
+    this.setState({
+      lat: lat,
+      lon: lon,
+      search: search,
+      results: []
+    })
+    
+    this.props.onSelect(lat, lon)
+
+  }
+```
 
 ### Plant Page
 
