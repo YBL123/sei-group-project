@@ -555,6 +555,8 @@ async function plantsCommentDelete(req, res) {
 
 #### Front: 
 
+Just like the likes component, I made this comments component independent so it could be called on anywhere on the app.
+
 __Add comment__
 
 ```javascript
@@ -658,24 +660,23 @@ Called on in the ShowPlant component:
 
 ## Wins
 
-* how well we worked together as a team etc....
-* Communication was key
-* Also used trello but mainly just discussed during standup every morning and updating each other whenever we were finished with a task or stuck, on zoom and on slack all day.
+The greatest win for this project was how well we worked together as a team.
+
+Before embarking on this project we planned out our app together by creating a wireframe and through discussions.
+
+Communication was key. We held standup every morning and discussed what everyone had been working on, what they had completed, what they might be needing help solving and what each member would like to work on next. 
+
+We had initially set up a Trello board to keep track of what everyone was working on. However we ended up continuously updating each other throughout the day through Zoom and Slack.
 
 ## Challenges
 
-* full-stack comments and likes....
-
-<!-- ## Bugs
-? -->
+The biggest challenges for me on this project was working full-stack on the likes and comments features.
 
 ## Future Improvements
 
 * Fine-tune trade and chat
 * Fine-tune styling
-* Exapand on social aspect. Followers, favourites
+* Exapand on social aspect. Add followers & favourites
 * Add likes to comments
 * Index page dropdown to also filter plants by newest, favourites, following, location - through search input.
 * An about page that is visible before registering/logging in and after.
-
-## Credits
