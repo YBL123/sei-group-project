@@ -70,7 +70,7 @@ npm run start
 
 The main components are home, index, profile, plant show. Interact through map, trading and linking through those pages etc
 
-### Home 
+## Home 
 
 ### Register & Login
 
