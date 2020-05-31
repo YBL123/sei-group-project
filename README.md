@@ -404,11 +404,13 @@ module.exports = {
 
 /// routes ///
 
+```javascript
 router.route('/plants/:id/comments')
   .post(secureRoute, plants.commentCreate)  
 
 router.route('/plants/:id/comments/:commentid')
   .delete(secureRoute, plants.commentDelete) 
+```
 
 /// controllers ///
 
