@@ -109,6 +109,8 @@ The user is greeted with a welcome message that changes according to the time of
 
 When the user adds a new plant to their portfolio they are able to add it's 'Nickname', 'Common-Name' (which prompts the 'Scientific Name'), 'Height in Centimeters', 'Description',  'Upload Image'.  Finally they are able to use the auto-complete location search input to enter the plant's address to fill in the 'Location'.
 
+super(props) is called here before any other statement as otherwise this.props would be undefined in the constructor. Additionally I am binding the handleSearchChange and the handleItemClicked. assigning the initial state to this.state directly in the constructor.
+
 This was done using the MapBox GL API.
 
 ```javascript
