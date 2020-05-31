@@ -92,16 +92,54 @@ Once the user has registerd and logged in, the index page also doubles as the ho
 
 ![plntfy create](readme-create.png)
 
+When the user adds a new plant to their portfolio they are able to add it's scientific name, upload an image and use the ### auto-complete location ### search in put to enter the plant's location.
+
+* insert snippet
+
+* insert close up image showing auto-complete location
+
+
 ### Plant Page
 
 ![plntfy page](readme-show.png)
 
+### Plant Page - Map Thumbnail
+
+* insert code snippet
+
+* inset image
+
+### Likes 
+
+* able to do so from index or in plant page
+
+* stays even when reloading page
+
+* insert code snippet
+
+* insert image
+
+### Comments
+
+*  able to do so on plant page
+
+* add comment
+
+* insert code snippet
+
+* delete comment
+
+* insert code snippet
+
+* show more, show less
+
+* insert code snippet
+
+* insert image
+
 ### Profile Page
 
 ![plntfy profile](readme-profile.png)
-
-
-When the user adds a new plant to their portfolio they are able to add it's scientific name, upload an image and use the auto-complete location search in put to enter the plant's location.
 
 ## Wins
 
@@ -113,8 +151,8 @@ When the user adds a new plant to their portfolio they are able to add it's scie
 
 * full-stack comments and likes....
 
-## Bugs
-?
+<!-- ## Bugs
+? -->
 
 ## Future Improvements
 
