@@ -74,12 +74,14 @@ The main components are home, index, profile, plant show. Interact through map, 
 
 * Register & Login
 
-![plntfy home](readme-home.png)
+When first loading the page, if the user has not registered and logged in, they are met with this page. 
+We chose to do this as users can only really interact with the app once they have created an account and a portfolio. The navbar items are completely hidden until the user registers and logs in.
 
+![plntfy home](readme-home.png)
 
 ## Index
 
-Becomes home page after logging in.
+Once the user has registerd and logged in, the index page also doubles as the home page. The user gains acess to all of the app's features. All items in the navbar become visible.
 
 ![plntfy index](readme-index.png)
 
