@@ -336,7 +336,7 @@ Users are able to like and unlike plants from the index page and on the plant pa
 
 #### Back 
 
-/// Schema ///
+__Schema__
 
 Likes are added as an array into the plantSchema. The array contains the userId and username. This will later be used to identify which user is liking the plant and which user is receiving the like on their plant.
 
