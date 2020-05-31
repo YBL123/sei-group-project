@@ -636,6 +636,7 @@ showMoreCommentsHandleClick = async () => {
 
 ## Trade
 
+![plntfy trade](readme_make_offer.png)
 
 ## Chat
 
