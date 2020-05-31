@@ -262,7 +262,7 @@ const PlantMapThumbnail = (props) => {
 export default PlantMapThumbnail
 ```
 
-The PlantMapThumbnail is called on in the ShowPlant component. 
+The PlantMapThumbnail is called on in the ShowPlant component. The props are passed down to the lat and lon from the address entered in the auto-complete location search input in the add plant/edit plant page.
 
 ```javascript
      <PlantMapThumbnail
