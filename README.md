@@ -121,7 +121,7 @@ turns to lat and lan to translate to map and create the map thumbnail
 
 * insert code snippet
 
-![plntfy page](readme-show.png)
+![plntfy plant page](readme-show.png)
 
 ### Likes 
 
@@ -131,7 +131,7 @@ turns to lat and lan to translate to map and create the map thumbnail
 
 * insert code snippet
 
-* insert image
+![plntfy likes](readme-likes.png)
 
 ### Comments
 
