@@ -118,6 +118,8 @@ This was done using the MapBox GL API.
 
 ![plntfy location autocomplete](readme-locatino.png)
 
+turns to lat and lan to translate to map and create the map thumbnail
+
 ### Plant Page - Map Thumbnail
 
 * insert code snippet
