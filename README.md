@@ -111,12 +111,12 @@ This was done using the MapBox GL API.
 
 * insert snippet
 
-* insert close up image showing auto-complete location
+![plntfy page](readme-show.png)
 
 
 ### Plant Page
 
-![plntfy page](readme-show.png)
+![plntfy location autocomplete](readme-locatino.png)
 
 ### Plant Page - Map Thumbnail
 
