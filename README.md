@@ -164,6 +164,7 @@ class NewPlant extends React.Component {
             buttonText="Add My Plant"
           />
 ```
+The FormPlant is called on in the render of NewPlant & EditPlant. The above props are passed down.
 
 ```javascript
  class FormPlant extends React.Component {
