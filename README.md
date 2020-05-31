@@ -156,11 +156,33 @@ This was done using the MapBox GL API.
   }
 ```
 
-### Plant Page
-
 ![plntfy location autocomplete](readme-location.png)
 
 turns to lat and lan to translate to map and create the map thumbnail
+
+```javascript
+       <div className="field">
+            <label className="label">Location</label>
+            <div className={`control ${errors.description ? 'is-danger' : ''}`}>
+              <div className="AutocompletePlace">
+                <input
+                  className="input AutocompletePlace-input" type="text" value={this.state.search} onChange={this.handleSearchChange} placeholder="Type an address"
+                />
+                <ul className="AutocompletePlace-results">
+                  {this.state.results.map(place => (
+                    <li
+                      key={place.id}
+                      className="AutocompletePlace-items"
+                      onClick={() => this.handleItemClicked(place)}
+                    >
+                      {place.place_name}
+                    </li>
+                  ))}
+                  {this.state.isLoading && <li className="AutocompletePlace-items">Loading...</li>}
+                </ul>
+```
+
+### Plant Page
 
 ### Plant Page - Map Thumbnail
 
