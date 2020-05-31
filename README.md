@@ -111,9 +111,6 @@ This was done using the MapBox GL API.
 
 * insert snippet
 
-![plntfy page](readme-show.png)
-
-
 ### Plant Page
 
 ![plntfy location autocomplete](readme-location.png)
@@ -124,7 +121,7 @@ turns to lat and lan to translate to map and create the map thumbnail
 
 * insert code snippet
 
-* inset image
+![plntfy page](readme-show.png)
 
 ### Likes 
 
