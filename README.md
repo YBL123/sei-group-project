@@ -594,7 +594,7 @@ commentHandleDelete = async event => {
   }
 ```
 
-__Show more/less comments __
+__Show more commnets__
 
 ```javascript
 showMoreCommentsHandleClick = async () => {
@@ -606,7 +606,10 @@ showMoreCommentsHandleClick = async () => {
     this.getData()
 
   }
+```
+__show less comments__
 
+```javascript
   ShowLessCommentsHandleClick = async () => {
     // console.log('showing less')
     // event.preventDefault()
