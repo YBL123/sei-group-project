@@ -68,7 +68,7 @@ npm run start
 * Link to our [wireframe](https://balsamiq.cloud/siy86e/pgk0p3q/r7402)
 ![plntfy wireframe](readme-plntify-wireframe.png)
 
-The main components are the home page, index page, profile page, plant page. Users are also able to interact with the map through the home/index page and through the map thumbnail on each plant page. Trade and chat are accessed through the user's profile page.
+The main components are the home page, index page, profile page, plant page. Users are also able to interact with the map through the home/index page and through the map thumbnail on each plant page. Trade and chat are accessed through the user's profile page. The user can also check their chat inbox through the navbar.
 
 I will give an overview of the app's architecture and delve into more detail on some of the features I built.
 
@@ -87,6 +87,11 @@ Once the user has registerd and logged in, the index page also doubles as the ho
 
 ![plntfy index](readme-index.png)
 
+### Profile Page
+
+The user is greeted with a welcome message that changes according to the time of day. Here the user is able to view their portfolio, offers adn responses.
+
+![plntfy profile](readme-profile.png)
 
 ### Create Plant
 
@@ -139,9 +144,6 @@ This was done using the MapBox GL API.
 
 * insert image
 
-### Profile Page
-
-![plntfy profile](readme-profile.png)
 
 ## Wins
 
