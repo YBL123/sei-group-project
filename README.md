@@ -336,6 +336,15 @@ Users are able to like and unlike plants from the index page and on the plant pa
 
 * back 
 
+/// schema ///
+
+```javascript
+const plantSchema = new mongoose.Schema({
+... 
+  likes: [{ userId: String, username: String }, {  required: false  }], 
+...
+```
+
 /// routes ///
 ```javscript
 router.route('/likes')
@@ -401,6 +410,25 @@ module.exports = {
 *  able to do so on plant page
 
 * back 
+
+/// comment schema ///
+
+```javascript
+//* each comment has to fit this schema criteria
+const commentSchema = new mongoose.Schema({
+  text: { type: String, required: true },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
+}, {
+  timestamps: true
+})
+```
+
+```javascript
+const plantSchema = new mongoose.Schema({
+... 
+  comments: [commentSchema],
+...
+```
 
 /// routes ///
 
