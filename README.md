@@ -156,9 +156,9 @@ This was done using the MapBox GL API.
   }
 ```
 
-![plntfy location autocomplete](readme-location.png)
+The address is condensed into lat and lan. This was done to translate to the map and place the marker on the map thumbnail.
 
-turns to lat and lan to translate to map and create the map thumbnail
+![plntfy location autocomplete](readme-location.png)
 
 ```javascript
        <div className="field">
