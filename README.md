@@ -646,6 +646,7 @@ __Toggle__
 
 ## Chat
 
+![plntfy chat](readme_chat.png)
 
 ## Wins
 
