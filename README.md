@@ -89,7 +89,7 @@ Once the user has registerd and logged in, the index page also doubles as the ho
 
 ### Profile Page
 
-The user is greeted with a welcome message that changes according to the time of day. Here the user is able to view their portfolio, offers adn responses.
+The user is greeted with a welcome message that changes according to the time of day. Here the user is able to view their portfolio, offers and responses.
 
 ![plntfy profile](readme-profile.png)
 
