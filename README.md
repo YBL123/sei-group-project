@@ -403,7 +403,7 @@ module.exports = {
 
 ### Front  
 
-I made the likes component independent so that it could be inserted and used anywhere on the app. 
+I made the likes component independent so that it could be called on and used anywhere on the app. 
 
 ```javascript
 const Plant = require('../models/plant')
@@ -448,6 +448,16 @@ async function like(req, res) {
 module.exports = {
   like //* same as like: like
 }
+```
+
+In our app the likes component is called on in the cardPlant component and is therefore displayed in the index page. It is also called on in the ShowPlant component and therefore each plant page. 
+
+Likes component being called on in the ShowPlant component: 
+```javascript
+     <Likes
+                likes={plant.likes}
+                plantId={plant._id}
+              />
 ```
 
 ![plntfy likes](readme-likes.png)
