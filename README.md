@@ -637,6 +637,14 @@ __Toggle__
   }
 ```
 
+Called on in the ShowPlant component: 
+
+```javascript
+     <Comments
+                plantId={plant._id}
+              />
+```
+
 ![plntify comments](readme-comments.png)
 
 
