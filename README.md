@@ -188,7 +188,7 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Map Thumbnail
 
-Independent component built. The this component passes the props to the ShowPlant component.
+I built the map thumbnail as an independent component. That way it could be easily reused anywhere on the app should we have wanted to. The this component passes the props to the lat and long.
 
 ```javascript
 import React from 'react'
@@ -239,6 +239,17 @@ const PlantMapThumbnail = (props) => {
 }
 
 export default PlantMapThumbnail
+```
+
+```javascript
+     <PlantMapThumbnail
+                _id={plant._id}
+                lat={plant.location[0].lat}
+                lon={plant.location[0].lon}
+                name={plant.name}
+                nickName={plant.nickName}
+                imageUrl={plant.imageUrl}
+              />
 ```
 
 ### Likes 
