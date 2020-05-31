@@ -347,13 +347,13 @@ const plantSchema = new mongoose.Schema({
 ...
 ```
 
-__routes__
+__Routes__
 ```javscript
 router.route('/likes')
   .post(secureRoute, like.like)
 ```
 
-__controllers__
+__Controllers__
 
 ```javascript
 const Plant = require('../models/plant')
