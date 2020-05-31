@@ -262,7 +262,7 @@ const PlantMapThumbnail = (props) => {
 export default PlantMapThumbnail
 ```
 
-This is how the map thumbnail is inserted into the plant page. 
+The PlantMapThumbnail is called on in the ShowPlant component. 
 
 ```javascript
      <PlantMapThumbnail
