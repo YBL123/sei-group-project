@@ -152,7 +152,7 @@ turns to lat and lan to translate to map and create the map thumbnail
 
 * insert code snippet
 
-* insert image
+![plntfy comments](readme-comments.png)
 
 
 ## Wins
