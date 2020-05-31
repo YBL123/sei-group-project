@@ -116,7 +116,7 @@ This was done using the MapBox GL API.
 
 ### Plant Page
 
-![plntfy location autocomplete](readme-locatino.png)
+![plntfy location autocomplete](readme-location.png)
 
 turns to lat and lan to translate to map and create the map thumbnail
 
