@@ -618,7 +618,10 @@ __show less comments__
     this.setState({ rows: lessRows })
     this.getData()
   }
+```
+__toggle__
 
+```javascript
   toggleCommentsHandleClick = async event => {
     event.preventDefault()
     const show = this.state.commentsStatus
