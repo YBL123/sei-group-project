@@ -113,7 +113,7 @@ super(props) is called here before any other statement as otherwise this.props w
 
 This was done using the MapBox GL API.
 
-The parent component NewPlant.js (also EditPlant)
+The parent component NewPlant.js (also EditPlant). Here the location array is being passed the object containing two keys and values for lat and lon.
 
 ```javascript
 class NewPlant extends React.Component {
