@@ -113,6 +113,58 @@ super(props) is called here before any other statement as otherwise this.props w
 
 This was done using the MapBox GL API.
 
+The parent component NewPlant.js (also EditPlant)
+
+```javascript
+class NewPlant extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      formData: { //* our formData in state, matches the object we need to send in the request
+        name: '',
+        imageUrl: '',
+        description: '',
+        height: '',
+        nickName: '',
+        units: '',
+        location: []
+      },
+      options: [],
+      errors: {
+        name: '',
+        imageUrl: '',
+        description: '',
+        height: '',
+        nickName: '',
+        location: ''
+      }, // * an object to store any errors that could occur when making the request.
+      place: null
+    }
+    this.handleSelect = this.handleSelect.bind(this)
+  }
+  handleSelect(lat, lon) {
+    const formData = { 
+      ...this.state.formData, location: [{lat: lat, lon: lon}]
+    }
+    this.setState({ formData })
+    // console.log('parent', this.state.formData.location)
+  }
+```
+
+```javascript
+         <FormPlant
+            formData={this.state.formData}
+            errors={this.state.errors}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+            onSelect={this.handleSelect}
+            handleSelectChange={this.handleSelectChange}
+            handleUnitsSelectChange={this.handleUnitsSelectChange}
+            imageUrl={this.setImgUrl}
+            buttonText="Add My Plant"
+          />
+```
+
 ```javascript
  class FormPlant extends React.Component {
   constructor(props) {
@@ -211,7 +263,7 @@ The address is condensed into lattitude and longitude. This was done to translat
 
 ### Map Thumbnail
 
-I built the map thumbnail as a separate component. That way it could be easily be imported and used anywhere on the app so long as it has an object passed down as props. This component passes the props to the lat and lon. The value for the lat and lon is assigned when a plant is added or edited.
+I built the map thumbnail as a separate component. That way it could be easily imported and used anywhere on the app so long as it has an object passed down as props. This component passes the props to the lat and lon. The value for the lat and lon is assigned when a plant is added or edited.
 
 ```javascript
 import React from 'react'
