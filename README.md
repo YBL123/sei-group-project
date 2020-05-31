@@ -92,7 +92,9 @@ Once the user has registerd and logged in, the index page also doubles as the ho
 
 ![plntfy create](readme-create.png)
 
-When the user adds a new plant to their portfolio they are able to add it's scientific name, upload an image and use the ### auto-complete location ### search in put to enter the plant's location.
+When the user adds a new plant to their portfolio they are able to add it's 'Nickname', 'Common-Name' (which prompts the 'Scientific Name'), 'Height in Centimeters', 'Description',  'Upload Image'.  Finally they are able to use the auto-complete location search input to enter the plant's address to fill in the 'Location'.
+
+This was done using the MapBox GL API.
 
 * insert snippet
 
