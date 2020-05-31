@@ -156,7 +156,7 @@ This was done using the MapBox GL API.
   }
 ```
 
-The address is condensed into lat and lan. This was done to translate to the map and place the marker on the map thumbnail.
+The address is condensed into lattitude and longitude. This was done to translate to the map and place the marker on the map thumbnail.
 
 ![plntfy location autocomplete](readme-location.png)
 
