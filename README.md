@@ -8,7 +8,7 @@
 A plant trading social app. 
 The time frame for this group project was a week. Our group was made up of 4 members.
 
-Each user has their own portfolio of plants that is diplayed on their profile page.
+Each user has their own portfolio of plants that is displayed on their profile page.
 
 The users are able to use the interactive map to see other plant's locations. Users are also able to add their own plant's location when they add a plant or edit their plant. 
 A map thumbnail with a marker for the plant's location is also displayed on each plant page.
