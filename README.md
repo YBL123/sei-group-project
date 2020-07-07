@@ -680,3 +680,7 @@ The biggest challenges for me on this project was working full-stack on the like
 * Add likes to comments
 * Index page dropdown to also filter plants by newest, favourites, following, location - through search input.
 * An about page that is visible before registering/logging in and after.
+
+## Key Learnings
+
+This project was a really great learning experience. I was able to build full stack features, work with third party APIs and work in a larger group. I think one of the most valuable lessons was experiencing working in feature brances and commiting our work. This meant we had to be super clear and communicative with each other to ensure any merge conflicts would be resolved without an loss of work. Thankfully we worked really well together and everyone was super respectful and communicated really well.
