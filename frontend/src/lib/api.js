@@ -91,3 +91,7 @@ export const getPhoto = (searchTerm) => {
 export const getSummary = (plantName) => {
   return axios.post('/api/summary', {searchTerm: plantName})
 }
+
+
+
+//is?
