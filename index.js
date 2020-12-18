@@ -1,5 +1,7 @@
-require('dotenv').config()
+// require('dotenv').config()
 const dotenv = require('dotenv')
+// //>>>???
+dotenv.config({ path: './config/config.env' })
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -7,11 +9,8 @@ const app = express()
 const logger = require('./lib/logger')
 const router = require('./config/routes')
 const port = process.env.PORT || 8000
-const dbURI = process.env.MONGODB_URI || 'mongodb+srv://ybl:Password123!@plntify.swq7d.mongodb.net/plntify?retryWrites=true&w=majority'
 
-
-//>>>???
-dotenv.config({ path: './config/config.env' })
+const dbURI = 'mongodb+srv://ybl:ICOG8weIr4DajBwN@plntify.swq7d.mongodb.net/plntify?retryWrites=true&w=majority'
 
 mongoose.connect(
   dbURI,

@@ -36,7 +36,7 @@ class Register extends React.Component {
     try {
       this.setState({loading: true})
       const response = await registerUser(this.state.formData)
-      
+      console.log('register', response)
       //If registration goes well, run the login user function with the formdata, then set token and redirect to profile page
       if (response.status === 201){
         const loginResponse = await loginUser(this.state.formData)
